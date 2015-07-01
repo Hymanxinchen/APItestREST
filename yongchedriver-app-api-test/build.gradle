@@ -1,0 +1,62 @@
+apply plugin: 'java' // adds 'test' task
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+test {
+
+  ant {
+      replaceregexp(
+          file: "src/test/java/com/yongche/driver/api/tools/RequestUrlConfig.java",
+          match: "public static boolean IS_ONLINE_TEST = .*",
+          replace: "public static boolean IS_ONLINE_TEST = ${IS_ONLINE_TEST};")
+  }
+
+  tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+  }
+
+  // explicitly include or exclude tests
+  include 'com/yongche/driver/api/core/**'
+
+  // show standard out and standard error of the test JVM(s) on the console
+  testLogging.showStandardStreams = true
+
+  // set heap size for the test JVM(s)
+  minHeapSize = "128m"
+  maxHeapSize = "512m"
+
+  // set JVM arguments for the test JVM(s)
+  jvmArgs '-XX:MaxPermSize=256m'
+
+  // listen to events in the test execution lifecycle
+  beforeTest { descriptor ->
+     logger.lifecycle("Running test: " + descriptor)
+  }
+
+  // listen to standard out and standard error of the test JVM(s)
+  onOutput { descriptor, event ->
+     logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
+  }
+
+  task testReport(type: TestReport) {
+    setDescription('Generates a test report from all subproject test tasks')
+    setGroup(JavaBasePlugin.DOCUMENTATION_GROUP)
+    
+    // Keep track of total failure count for later test and output
+    def testFailures = 0
+
+    // Place the output in the root build reports directory by default
+    destinationDir = file("$buildDir/reports/allTests")
+
+    doLast {
+      if (testFailures > 0) {
+         throw Exception("There were ${testFailures} test failures")
+      }
+    }
+    
+    // Add the test report to the dependency tree for a standard build
+    build.dependsOn(testReport)
+  } 
+}

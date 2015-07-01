@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yongche.driver.api.core.GetDriverTodayDataTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2014-09-26T08:55:30" hostname="localhost" time="0.0080">
+  <properties/>
+  <testcase name="testResponseCodeSuccess" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0"/>
+  <testcase name="testMth_completeorderBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0010"/>
+  <testcase name="testToday_collectBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0010"/>
+  <testcase name="testToday_servicekmBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0"/>
+  <testcase name="testMth_incomeBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0"/>
+  <testcase name="testEvaluationBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0"/>
+  <testcase name="testMth_servicekmBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0010"/>
+  <testcase name="testToday_incomeBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0"/>
+  <testcase name="testMth_servicetimeBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0"/>
+  <testcase name="testCodeSuccess" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0010"/>
+  <testcase name="testToday_servicetimeBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0010"/>
+  <testcase name="testContributionBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverTodayDataTest" time="0.0"/>
+  <system-out><![CDATA[this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+GET http://driver-api.yongche.com/V1/Driver/GetDriverTodayData?imei=867496010827329&is_gzip=1&version=41
+response is :{"code":200,"msg":{"tday_income":"18.77","tday_servicekm":1,"tday_servicetime":0,"tday_collect":0,"contribution":200,"evaluation":0,"tmth_income":"18.77","tmth_servicekm":1,"tmth_servicetime":0,"tmth_completeorder":1}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

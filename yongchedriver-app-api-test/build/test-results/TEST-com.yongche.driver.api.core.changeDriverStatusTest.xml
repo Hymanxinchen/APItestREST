@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yongche.driver.api.core.ChangeDriverStatusTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2014-09-26T08:55:30" hostname="localhost" time="0.01">
+  <properties/>
+  <testcase name="testResponseCodeSuccess" classname="com.yongche.driver.api.core.ChangeDriverStatusTest" time="0.0010"/>
+  <testcase name="testCodeSuccess" classname="com.yongche.driver.api.core.ChangeDriverStatusTest" time="0.0080"/>
+  <system-out><![CDATA[{vehicle_number=8101, area_code=+86, cellphone=18501271706, imei=867496010827329}
+this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, oauth_version=1.0, oauth_nonce=1411722729, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_timestamp=1411721729
+GET http://driver-api.yongche.com/Driver/CreateDriverPassword?vehicle_number=8101&area_code=%2B86&cellphone=18501271706&imei=867496010827329
+this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, oauth_version=1.0, oauth_nonce=1411722729, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_timestamp=1411721729
+**********POST http://driver-api.yongche.com/oauth/accessToken
+Token is :d731cbc5c5cea82be1d9c8e2222ab33405424d926
+this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+**********POST http://driver-api.yongche.com/Driver/memberStat
+response is :{"code":200,"msg":"success"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

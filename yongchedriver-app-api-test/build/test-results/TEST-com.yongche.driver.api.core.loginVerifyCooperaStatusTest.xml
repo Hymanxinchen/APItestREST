@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2014-09-26T08:55:31" hostname="localhost" time="0.0070">
+  <properties/>
+  <testcase name="testResponseCodeSuccess" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <testcase name="testCountryNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <testcase name="testDriver_idNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <testcase name="testStateNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0010"/>
+  <testcase name="testCar_idNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <testcase name="testPasswordNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <testcase name="testCodeSuccess" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <testcase name="testArea_CodeNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0010"/>
+  <testcase name="testTimezoneNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <testcase name="testNameNotNull" classname="com.yongche.driver.api.core.LoginVerifyCooperaStatusTest" time="0.0"/>
+  <system-out><![CDATA[{vehicle_number=8101, area_code=86, cellphone=18501271706, imei=867496010827329, version=41}
+this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, oauth_version=1.0, oauth_nonce=1411722731, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_timestamp=1411721731
+GET http://driver-api.yongche.com/Driver/VerifyCooperaStatus?vehicle_number=8101&area_code=86&cellphone=18501271706&imei=867496010827329&version=41
+response is :{"code":200,"msg":{"name":"\u7a0b\u601d\u6d4b\u8bd5","state":"1003","car_id":9194,"password":593184,"driver_id":9162,"cn":{"area_code":"86","country":"CN","timezone":"Asia\/Shanghai"}}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

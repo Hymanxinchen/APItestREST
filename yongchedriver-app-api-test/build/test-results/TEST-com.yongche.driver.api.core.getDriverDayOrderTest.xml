@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yongche.driver.api.core.GetDriverDayOrderTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2014-09-26T08:55:30" hostname="localhost" time="0.018">
+  <properties/>
+  <testcase name="testDetalNotNull" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0010"/>
+  <testcase name="testCountBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0030"/>
+  <testcase name="testResponseCodeSuccess" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0"/>
+  <testcase name="testDetailTimeBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0020"/>
+  <testcase name="testDetailAmountBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0010"/>
+  <testcase name="testCodeSuccess" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0"/>
+  <testcase name="testDetailActual_time_lengthBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0010"/>
+  <testcase name="testDetailStart_positionBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0010"/>
+  <testcase name="testDetailService_order_idBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0010"/>
+  <testcase name="testAmountBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverDayOrderTest" time="0.0010"/>
+  <system-out><![CDATA[this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+OAuth oauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+GET http://driver-api.yongche.com/V1/Driver/GetDriverDayOrder?timeflag=2014-08-08&imei=867496010827329&version=41
+response is :{"code":200,"msg":{"detail":[{"time":1407478371,"service_order_id":18625301,"start_position":"\u4e94\u68f5\u677e","amount":"107.92"},{"time":1407478309,"service_order_id":18625147,"start_position":"\u4e2d\u56fd\u6280\u672f\u4ea4\u6613\u5927\u53a6B\u5ea7","amount":"18.77"}],"count":2,"amount":126.69}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

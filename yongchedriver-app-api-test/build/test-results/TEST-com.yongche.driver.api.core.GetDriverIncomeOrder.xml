@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yongche.driver.api.core.GetDriverIncomeOrder" tests="5" skipped="0" failures="0" errors="0" timestamp="2014-09-26T08:55:30" hostname="localhost" time="0.0030">
+  <properties/>
+  <testcase name="testTime_longBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverIncomeOrder" time="0.0"/>
+  <testcase name="testCountBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverIncomeOrder" time="0.0"/>
+  <testcase name="testResponseCodeSuccess" classname="com.yongche.driver.api.core.GetDriverIncomeOrder" time="0.0"/>
+  <testcase name="testKilometersBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverIncomeOrder" time="0.0"/>
+  <testcase name="testCodeSuccess" classname="com.yongche.driver.api.core.GetDriverIncomeOrder" time="0.0"/>
+  <system-out><![CDATA[this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+OAuth oauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+GET http://driver-api.yongche.com/Driver/GetDriverIncomeOrder?timeflag=2014-08&imei=867496010827329&type=month&version=41
+response is :{"code":200,"msg":[{"date":"2014-08-08","week":"5","count":2,"time_long":3,"kilometers":2000,"amount":126.69}]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

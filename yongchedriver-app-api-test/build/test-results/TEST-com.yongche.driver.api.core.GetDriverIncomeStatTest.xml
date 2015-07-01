@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yongche.driver.api.core.GetDriverIncomeStatTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2014-09-26T08:55:30" hostname="localhost" time="0.0040">
+  <properties/>
+  <testcase name="testResponseCodeSuccess" classname="com.yongche.driver.api.core.GetDriverIncomeStatTest" time="0.0"/>
+  <testcase name="testService_timesThanZero" classname="com.yongche.driver.api.core.GetDriverIncomeStatTest" time="0.0010"/>
+  <testcase name="testComplete_orderBiggerThanZero" classname="com.yongche.driver.api.core.GetDriverIncomeStatTest" time="0.0010"/>
+  <testcase name="testIncomeThanZero" classname="com.yongche.driver.api.core.GetDriverIncomeStatTest" time="0.0"/>
+  <testcase name="testService_kilometersThanZero" classname="com.yongche.driver.api.core.GetDriverIncomeStatTest" time="0.0"/>
+  <testcase name="testCodeSuccess" classname="com.yongche.driver.api.core.GetDriverIncomeStatTest" time="0.0"/>
+  <system-out><![CDATA[this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+OAuth oauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+this is authStringoauth_signature=5sARLGoVkNAPhh5wq1Hl95crWIk, x_auth_mode=client_auth, oauth_version=1.0, oauth_nonce=1411722730, oauth_signature_method=PLAINTEXT, oauth_consumer_key=4821726c1947cdf3eebacade98173939, oauth_token=d731cbc5c5cea82be1d9c8e2222ab33405424d926, oauth_token_secret=null, oauth_timestamp=1411721730
+GET http://driver-api.yongche.com/Driver/GetDriverIncomeStat?time_flag=2014-08&imei=867496010827329&out_coord_type=baidu&type=month&version=41
+response is :{"code":200,"msg":{"complete_order":0,"service_kilometers":0,"service_times":0,"income":0,"income_city_rank":0,"income_all_rank":0,"is_income_city_rank_up":-2498,"is_income_all_rank_up":-5651,"income_better_than_city":0,"income_better_than_all":0,"income_better_than_city_diff":-34,"income_better_than_all_diff":-38}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
